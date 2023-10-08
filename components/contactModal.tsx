@@ -126,7 +126,7 @@ const ContactModal = ({ visible, closeModal }: Props) => {
             </div>
             {dataForm.phones.map((phone, index) => {
               return (
-                <div className="p-2">
+                <div key={index} className="p-2">
                   Phone {index + 1} : {phone.number}
                 </div>
               );
